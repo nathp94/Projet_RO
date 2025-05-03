@@ -1,7 +1,7 @@
 from collections import deque
 
 def afficher_table_bellman(dist, pred):
-    print("\n📋 Table Bellman-Ford (chemin en cours) :")
+    print("\nTable Bellman-Ford (chemin en cours) :")
     print(f"{'Sommet':<10}{'Distance':<15}{'Prédécesseur'}")
     for i in range(len(dist)):
         d = '∞' if dist[i] == float('inf') else dist[i]
