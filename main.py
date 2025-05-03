@@ -77,4 +77,6 @@ def main():
                     algo_pousser_reetiqueter(tabC)
 
 # Lancement du programme
-main()
+if __name__ == "__main__":
+    # Lancement du programme
+    main()
