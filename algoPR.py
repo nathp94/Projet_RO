@@ -15,8 +15,8 @@ def initialiser(capacites, source):
             excedent[source] -= delta
             residuel[source][v] = 0
             residuel[v][source] = delta
-            print(f"Init: pousser {delta} de la source {source} vers {v}")
-
+            print(f"Initialisation : envoi de {delta} unité(s) depuis la source {source} vers {v}")
+            
     return residuel, hauteur, excedent, flot
 
 def pousser(u, residuel, excedent, flot, hauteur):
@@ -30,7 +30,7 @@ def pousser(u, residuel, excedent, flot, hauteur):
             residuel[v][u] += delta
             excedent[u] -= delta
             excedent[v] += delta
-            print(f"Pousser {delta} de {u} vers {v}, h[{u}]={hauteur[u]}, h[{v}]={hauteur[v]}")
+            print(f"Flux de {delta} propagé de {u} vers {v} (hauteur {hauteur[u]} → {hauteur[v]})")
             return True
     return False
 
@@ -41,11 +41,11 @@ def reetiqueter(u, residuel, hauteur):
         if residuel[u][v] > 0:
             min_h = min(min_h, hauteur[v])
     if min_h < float('inf'):
-        print(f"Réétiqueter: hauteur de {u} passe de {hauteur[u]} à {min_h + 1}")
+        print(f"Réétiquetage : hauteur du sommet {u} passe de {ancienne} à {hauteur[u]}")
         hauteur[u] = min_h + 1
 
 def afficher_matrice_flot(flot, capacites):
-    print("Matrice de flot (format f/c) :")
+    print("\nMatrice des flots (format flot/capacité) :")
     n = len(flot)
     for u in range(n):
         ligne = []
