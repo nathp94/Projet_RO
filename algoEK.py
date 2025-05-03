@@ -27,8 +27,6 @@ def parcours_largeur(tab, succ):
                     Q.append(i)  # Ajouter ses successeurs s'ils ne sont ni dans les files ni dans les sommets examinés
                     parent[i] = Q[0]  # Recorder pour chaque successeur son parent
             E.append(Q.pop(0))
-            # print("Q :", Q)
-            # print("Examiné :", E)
         else:
             return False
     return parent
