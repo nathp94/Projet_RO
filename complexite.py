@@ -66,7 +66,7 @@ def creation_plot():
     liste_dure_min = []
     liste_dure_pr = []
  
-    for taille in [10,20,40]:
+    for taille in [10,20,40,100,400,1000,4000,10000]:
         for i in range(100):
             debut = time.perf_counter()
             C, D = generate_random_flow_problem(taille)
