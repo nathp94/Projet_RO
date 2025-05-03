@@ -1,0 +1,32 @@
+--- Pousser-Réétiqueter ---
+Initialisation : envoi de 5 unité(s) depuis la source 0 vers 1
+Initialisation : envoi de 8 unité(s) depuis la source 0 vers 2
+Initialisation : envoi de 4 unité(s) depuis la source 0 vers 3
+Réétiquetage : hauteur du sommet 1 passe de 0 à 1
+Flux de 4 propagé de 1 vers 2 (hauteur 1 → 0)
+Flux de 1 propagé de 1 vers 4 (hauteur 1 → 0)
+Réétiquetage : hauteur du sommet 2 passe de 0 à 1
+Flux de 7 propagé de 2 vers 5 (hauteur 1 → 0)
+Flux de 5 propagé de 2 vers 6 (hauteur 1 → 0)
+Réétiquetage : hauteur du sommet 3 passe de 0 à 1
+Flux de 4 propagé de 3 vers 6 (hauteur 1 → 0)
+Réétiquetage : hauteur du sommet 4 passe de 0 à 1
+Flux de 1 propagé de 4 vers 5 (hauteur 1 → 0)
+Réétiquetage : hauteur du sommet 5 passe de 0 à 1
+Flux de 7 propagé de 5 vers 7 (hauteur 1 → 0)
+Réétiquetage : hauteur du sommet 5 passe de 1 à 2
+Flux de 1 propagé de 5 vers 2 (hauteur 2 → 1)
+Flux de 1 propagé de 2 vers 6 (hauteur 1 → 0)
+Réétiquetage : hauteur du sommet 6 passe de 0 à 1
+Flux de 10 propagé de 6 vers 7 (hauteur 1 → 0)
+
+Matrice des flots (format flot/capacité) :
+   0    5/5   8/8   4/4    0     0     0     0
+   0     0    4/4    0    1/7    0     0     0
+   0     0     0     0     0    6/7   6/8    0
+   0     0    0/7    0     0     0    4/4    0
+   0     0     0     0     0    1/6    0     0
+   0     0     0     0     0     0     0    7/7
+   0     0     0     0     0     0     0  10/10
+   0     0     0     0     0     0     0     0
+Flot maximal (Pousser-Réétiqueter) = 17

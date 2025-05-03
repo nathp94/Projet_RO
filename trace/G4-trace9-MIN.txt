@@ -1,0 +1,19 @@
+Table Bellman-Ford (chemin en cours) :
+Sommet    Distance       Prédécesseur
+0         0              -
+1         4              0
+2         4              0
+3         5              2
+4         7              2
+5         5              3
+
+
+ Flot total envoyé : 5
+ Coût total minimal : 25
+ Matrice du flot final :
+[0, 0, 5, 0, 0, 0]
+[0, 0, 0, 0, 0, 0]
+[0, 0, 0, 5, 0, 0]
+[0, 0, 0, 0, 0, 5]
+[0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0]
