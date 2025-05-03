@@ -41,7 +41,7 @@ def reetiqueter(u, residuel, hauteur):
         if residuel[u][v] > 0:
             min_h = min(min_h, hauteur[v])
     if min_h < float('inf'):
-        print(f"Réétiquetage : hauteur du sommet {u} passe de {ancienne} à {hauteur[u]}")
+        print(f"Réétiquetage : hauteur du sommet {u} passe de {hauteur[u]} à {min_h + 1}")
         hauteur[u] = min_h + 1
 
 def afficher_matrice_flot(flot, capacites):
